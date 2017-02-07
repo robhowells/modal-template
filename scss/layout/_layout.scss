@@ -1,0 +1,54 @@
+/*========================================
+
+	Layout Styles
+	_____________
+
+	For Header, Main and Footer sections
+
+========================================*/
+
+/*========================================
+
+	HTML & Body Styles
+
+========================================*/
+
+body {
+	&.mobile-no-scroll {
+		@include breakpoint(phablet) {
+			width: 100%;
+			position: fixed;
+		}
+	}
+}
+
+/*========================================
+
+	Header Section Styles
+
+========================================*/
+
+
+/*========================================
+
+	Main Section Styles
+
+========================================*/
+
+.section-padded-xs {
+	padding: 25px 0;
+}
+
+.section-padded-sm {
+	padding: 40px 0;
+}
+
+.section-padded {
+	padding: 50px 0;
+}
+
+/*========================================
+
+	Footer Section Styles
+
+========================================*/

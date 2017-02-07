@@ -1,0 +1,1301 @@
+/*========================================
+
+	Base Styles
+
+========================================*/
+/*========================================
+
+	Grid Styles
+	
+	Credit: Sonny Prince - primary developer of grid.scss
+	https://github.com/sonnyprince
+	_____________
+
+========================================*/
+/*========================================
+
+	Grid Basic Setup
+
+========================================*/
+/*========================================
+
+	Container Setup
+
+========================================*/
+.container {
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  max-width: 1320px; }
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 15px; } }
+
+/*========================================
+
+	Setup Column and Offset Column
+	Float and Margins
+
+========================================*/
+/*========================================
+
+	Clearfix and margin on Rows
+
+========================================*/
+.row::before, .row::after {
+  content: '';
+  display: table; }
+
+.row::after {
+  clear: both; }
+
+.negative-row {
+  position: relative;
+  margin-left: -1.32576%;
+  margin-right: -1.32576%; }
+
+/*========================================
+
+	Columns List
+
+========================================*/
+/*========================================
+
+	Create Each Grid Column Percentage
+
+========================================*/
+/*========================================
+
+	Standard Column Widths And Offsets
+
+========================================*/
+/*========================================
+
+	Tablet Columns
+
+========================================*/
+/*========================================
+
+	Phablet Columns
+
+========================================*/
+/*========================================
+
+	Mobile Columns
+
+========================================*/
+/*========================================
+
+	Set Up Grid
+
+========================================*/
+.columns {
+  float: none;
+  display: block;
+  margin: 0 1.25% 5%; }
+  .columns.first {
+    margin-left: 10px; }
+  .columns.last {
+    margin-right: 10px; }
+
+.one.columns {
+  width: auto; }
+
+.two.columns {
+  width: auto; }
+
+.three.columns {
+  width: auto; }
+
+.four.columns {
+  width: auto; }
+
+.five.columns {
+  width: auto; }
+
+.six.columns {
+  width: auto; }
+
+.seven.columns {
+  width: auto; }
+
+.eight.columns {
+  width: auto; }
+
+.nine.columns {
+  width: auto; }
+
+.ten.columns {
+  width: auto; }
+
+.eleven.columns {
+  width: auto; }
+
+.twelve.columns {
+  width: auto; }
+
+.one-phablet.columns {
+  width: 97.25%; }
+
+.two-phablet.columns {
+  width: 97.25%; }
+
+.three-phablet.columns {
+  width: 97.25%; }
+
+.one-mobile.columns {
+  float: left;
+  margin: 0 1.25% 2.5%;
+  width: 47.5%; }
+
+.two-mobile.columns {
+  float: left;
+  margin: 0 1.25% 2.5%;
+  width: 97.5%; }
+
+@media only screen and (min-width: 569px) {
+  .one-phablet.columns {
+    float: left;
+    margin: 0 1.25% 2.5%;
+    width: 22.5%; }
+  .two-phablet.columns {
+    float: left;
+    margin: 0 1.25% 2.5%;
+    width: 47.5%; }
+  .three-phablet.columns {
+    float: left;
+    margin: 0 1.25% 2.5%;
+    width: 72.5%; } }
+
+@media only screen and (min-width: 760px) {
+  .one-tablet.columns {
+    width: 5.68182%; }
+  .two-tablet.columns {
+    width: 14.01515%; }
+  .three-tablet.columns {
+    width: 22.34848%; }
+  .four-tablet.columns {
+    width: 30.68182%; }
+  .five-tablet.columns {
+    width: 39.01515%; }
+  .six-tablet.columns {
+    width: 47.34848%; }
+  .seven-tablet.columns {
+    width: 55.68182%; }
+  .eight-tablet.columns {
+    width: 64.01515%; }
+  .nine-tablet.columns {
+    width: 72.34848%; }
+  .ten-tablet.columns {
+    width: 80.68182%; }
+  .eleven-tablet.columns {
+    width: 89.01515%; }
+  .twelve-tablet.columns {
+    width: 97.34848%; }
+  .offset-by-none-tablet {
+    margin-left: 1.32576%;
+    margin-right: 1.32576%; } }
+
+@media only screen and (min-width: 768px) {
+  .column,
+  .columns {
+    float: left;
+    margin: 0 1.32576%; }
+    .column.first,
+    .columns.first {
+      margin-left: 0; }
+    .column.last,
+    .columns.last {
+      margin-right: 0; }
+  .one.columns {
+    width: 5.68182%; }
+  .two.columns {
+    width: 14.01515%; }
+  .three.columns {
+    width: 22.34848%; }
+  .four.columns {
+    width: 30.68182%; }
+  .five.columns {
+    width: 39.01515%; }
+  .six.columns {
+    width: 47.34848%; }
+  .seven.columns {
+    width: 55.68182%; }
+  .eight.columns {
+    width: 64.01515%; }
+  .nine.columns {
+    width: 72.34848%; }
+  .ten.columns {
+    width: 80.68182%; }
+  .eleven.columns {
+    width: 89.01515%; }
+  .twelve.columns {
+    width: 97.34848%; }
+  .offset-by-half {
+    margin-left: 5.49242%; }
+  .offset-by-one {
+    margin-left: 9.65909%; }
+  .offset-by-one-half {
+    margin-left: 13.82576%; }
+  .offset-by-two {
+    margin-left: 17.99242%; }
+  .offset-by-two-half {
+    margin-left: 22.15909%; }
+  .offset-by-three {
+    margin-left: 26.32576%; }
+  .offset-by-three-half {
+    margin-left: 30.49242%; }
+  .offset-by-four {
+    margin-left: 34.65909%; }
+  .offset-by-four-half {
+    margin-left: 38.82576%; }
+  .offset-by-five {
+    margin-left: 42.99242%; }
+  .offset-by-five-half {
+    margin-left: 47.15909%; }
+  .offset-by-six {
+    margin-left: 51.32576%; }
+  .offset-by-six-half {
+    margin-left: 55.49242%; }
+  .offset-by-seven {
+    margin-left: 59.65909%; }
+  .offset-by-seven-half {
+    margin-left: 63.82576%; }
+  .offset-by-eight {
+    margin-left: 67.99242%; }
+  .offset-by-eight-half {
+    margin-left: 72.15909%; }
+  .offset-by-nine {
+    margin-left: 76.32576%; }
+  .offset-by-nine-half {
+    margin-left: 80.49242%; }
+  .offset-by-ten {
+    margin-left: 84.65909%; }
+  .offset-by-ten-half {
+    margin-left: 88.82576%; }
+  .offset-by-eleven {
+    margin-left: 92.99242%; }
+  .offset-by-eleven-half {
+    margin-left: 97.15909%; } }
+
+/*========================================
+
+	Fixed Width / Not Responsive
+
+========================================*/
+/*========================================
+
+	Resonsive Mixin For Responsive 
+	Styles Within The Normal Classes.
+
+========================================*/
+/*========================================
+
+		Normalize Styles
+		_____________
+
+========================================*/
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+	 ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/*========================================
+
+	Base Styles
+	_____________
+
+========================================*/
+/*========================================
+
+	Reset
+
+========================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/*========================================
+
+	Micro Clearfix
+
+========================================*/
+.clearfix::before, .clearfix::after {
+  content: '';
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix::after {
+  clear: both; }
+
+/*========================================
+
+	Box Layout
+
+========================================*/
+* {
+  box-sizing: border-box; }
+
+/*========================================
+
+	Useful Global Styles
+		
+========================================*/
+img {
+  height: auto;
+  display: block;
+  max-width: 100%; }
+
+nav ul {
+  list-style: none; }
+
+/*========================================
+
+	Font Rendering
+
+========================================*/
+* {
+  font-smoothing: antialiased grayscale; }
+
+/*========================================
+
+	Set the base font size to 10
+		
+========================================*/
+html, body {
+  font-size: 62.5%; }
+
+/*========================================
+
+	Global Styles
+
+========================================*/
+/*========================================
+
+	Colour Styles
+	_____________
+
+========================================*/
+/*========================================
+
+	Normal Colours
+
+========================================*/
+/*========================================
+
+	Main Colours 
+
+========================================*/
+/*========================================
+
+	Colour Variations
+
+========================================*/
+/*========================================
+	 
+	Colour Classes
+
+========================================*/
+.bg-primary {
+  background: #2a2b2f; }
+
+.color-primary {
+  color: #2a2b2f; }
+
+.bg-secondary {
+  background: #efefef; }
+
+.color-secondary {
+  color: #efefef; }
+
+.bg-accent {
+  background: #34dddd; }
+
+.color-accent {
+  color: #34dddd; }
+
+.bg-primary-variation-1 {
+  background: #646466; }
+
+.color-primary-variation-1 {
+  color: #646466; }
+
+.bg-secondary-variation-1 {
+  background: #f9f9f9; }
+
+.color-secondary-variation-1 {
+  color: #f9f9f9; }
+
+.bg-white-default {
+  background: #fff; }
+
+.color-white-default {
+  color: #fff; }
+
+.bg-black-default {
+  background: #000; }
+
+.color-black-default {
+  color: #000; }
+
+.bg-error {
+  background: #ffbaba; }
+
+.color-error {
+  color: #ffbaba; }
+
+.bg-success {
+  background: #dff2bf; }
+
+.color-success {
+  color: #dff2bf; }
+
+/*========================================
+
+	Mixins
+	Credit: Sonny Prince - joint developer of mixins.scss
+	https://github.com/sonnyprince
+	_____________
+
+========================================*/
+/*========================================
+
+	Cross Browser Opacity
+
+========================================*/
+/*========================================
+
+	REM Cross Browser Font Size 
+	Calculator
+
+========================================*/
+/*========================================
+
+	Cross Browser Diagonal Gradient
+
+========================================*/
+/*========================================
+
+	Cross Browser Horizontal Gradient
+
+========================================*/
+/*========================================
+
+	Cross Browser Vertical Gradient
+
+========================================*/
+/*========================================
+
+	List styles
+
+========================================*/
+/*========================================
+
+	Clearfix
+
+========================================*/
+/*========================================
+
+	Placeholder
+
+========================================*/
+/*========================================
+
+   Background Images
+
+========================================*/
+/*========================================
+
+   Positioning
+
+========================================*/
+/*========================================
+
+	Keyframe animation
+
+========================================*/
+/*========================================
+
+	Text Ellipsis
+
+========================================*/
+/*========================================
+
+   Horizonal Scrolling
+
+========================================*/
+/*========================================
+
+	Aspect Ratio
+
+========================================*/
+/*========================================
+
+	Responsive Fonts
+
+========================================*/
+/*========================================
+
+    Typography Styles
+    _____________
+
+========================================*/
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2a2b2f;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-size: 60px;
+  font-size: 6rem; }
+
+h2 {
+  font-size: 45px;
+  font-size: 4.5rem; }
+
+h3 {
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+h4 {
+  font-size: 22px;
+  font-size: 2.2rem; }
+
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+h6 {
+  font-size: 15px;
+  font-size: 1.5rem; }
+
+p,
+li,
+a {
+  line-height: 2;
+  color: #2a2b2f;
+  margin-bottom: 1em;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+a:hover {
+  color: #2a2b2f; }
+
+/*========================================
+
+    Typography Helpers
+
+========================================*/
+.heading-font {
+  font-family: 'Open Sans', sans-serif; }
+
+.body-font {
+  font-family: 'Open Sans', sans-serif; }
+
+/*========================================
+
+	Icon Styles
+	_____________
+
+========================================*/
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*========================================
+
+	Z-Index Styles
+	_________________
+
+	This File Is For Setting All Of
+	The Base Z-Index Values For A More
+	Modular & Reusable Approach.
+
+	Credit: Sonny Prince - developer of zindex.scss
+	https://github.com/sonnyprince
+
+========================================*/
+/*========================================
+
+	Example Usage
+	--------------------------------------
+
+	.className {
+		z-index: z(modal);
+	}
+
+	Will Output:
+
+	.className {
+		z-index: 3000;
+	}
+
+========================================*/
+/*========================================
+
+	Helper Styles
+	_____________
+
+========================================*/
+/*========================================
+
+	Margin Helpers
+
+========================================*/
+.mbn {
+  margin-bottom: 0; }
+
+.mb {
+  margin-bottom: 1.76768%; }
+
+.mb25 {
+  margin-bottom: 25px; }
+
+/*========================================
+
+	Animation Helpers
+
+========================================*/
+/*========================================
+
+	Example Usage
+	--------------------------------------
+
+	.shake {
+	    @include animation('shake 0.5s');
+	}
+
+========================================*/
+/*========================================
+
+	List Helpers
+
+========================================*/
+.block-list {
+  margin-left: 0;
+  list-style: none; }
+  .block-list > li {
+    float: none;
+    display: block; }
+
+.inline-list {
+  margin-left: 0;
+  list-style: none; }
+  .inline-list > li {
+    float: left;
+    margin-bottom: 0; }
+
+.styled-list {
+  margin-left: 20px;
+  margin-bottom: 1.5em; }
+  .styled-list li {
+    margin-bottom: .5em; }
+    .styled-list li:last-child {
+      margin-bottom: 0; }
+
+@media (min-width: 760px) {
+  .scrollable-on-phablet {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; }
+    .scrollable-on-phablet > li {
+      float: none;
+      white-space: normal;
+      display: inline-block; } }
+
+.overflow-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; }
+  .overflow-scroll > li {
+    float: none;
+    white-space: normal;
+    display: inline-block; }
+
+/*========================================
+
+	Container Helpers
+
+========================================*/
+.same-height-children {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  @media (min-width: 760px) {
+    .same-height-children {
+      display: block; } }
+
+/*========================================
+
+	Position helpers
+
+========================================*/
+.hidden {
+  display: none; }
+
+@media (min-width: 760px) {
+  .hidden-on-phablet {
+    display: none; } }
+
+.display-block {
+  display: block; }
+
+/*========================================
+
+	Text Helpers
+
+========================================*/
+.text-center {
+  text-align: center; }
+
+.text-hidden {
+  font-size: 0;
+  position: absolute;
+  color: transparent;
+  text-indent: -99999px; }
+
+/*========================================
+
+	Layout Styles
+
+========================================*/
+/*========================================
+
+	Layout Styles
+	_____________
+
+	For Header, Main and Footer sections
+
+========================================*/
+/*========================================
+
+	HTML & Body Styles
+
+========================================*/
+@media (min-width: 760px) {
+  body.mobile-no-scroll {
+    width: 100%;
+    position: fixed; } }
+
+/*========================================
+
+	Header Section Styles
+
+========================================*/
+/*========================================
+
+	Main Section Styles
+
+========================================*/
+.section-padded-xs {
+  padding: 25px 0; }
+
+.section-padded-sm {
+  padding: 40px 0; }
+
+.section-padded {
+  padding: 50px 0; }
+
+/*========================================
+
+	Footer Section Styles
+
+========================================*/
+/*========================================
+		Component Styles
+	========================================*/
+/*========================================
+
+	Modal Styles
+	_____________
+
+========================================*/
+.modal {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 0;
+  position: fixed;
+  overflow-y: scroll;
+  filter: alpha(opactiy=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7); }
+  .modal-backdrop {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2000; }
+  .modal.modal-open {
+    max-height: none;
+    filter: alpha(opactiy=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1; }
+  .modal-inner {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    height: auto;
+    padding: 50px;
+    max-width: 600px;
+    min-height: 600px;
+    position: relative;
+    filter: alpha(opactiy=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    margin: 0 auto 80px;
+    background: #fff;
+    -webkit-transition: opacity .3s, top .3s;
+    transition: opacity .3s, top .3s;
+    -webkit-transition-delay: .1s;
+            transition-delay: .1s;
+    z-index: 3000; }
+    .modal-open .modal-inner {
+      top: 10px;
+      filter: alpha(opactiy=100);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      opacity: 1; }
+      @media (min-width: 760px) {
+        .modal-open .modal-inner {
+          top: 80px; } }
+    @media (min-width: 760px) {
+      .modal-inner {
+        width: 100%; } }
+  .modal-close {
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 30px;
+    position: absolute; }
+    .modal-close::before, .modal-close::after {
+      content: '';
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 2px;
+      width: 25px;
+      display: block;
+      position: absolute;
+      background: #000; }
+    .modal-close::before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .modal-close::after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
