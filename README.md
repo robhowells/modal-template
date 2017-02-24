@@ -1,2 +1,2 @@
 #Modal template
-Example markup and styling for a modal
+Example markup, basic styling and logic to show/hide a modal
