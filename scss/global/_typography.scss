@@ -17,67 +17,17 @@ body {
     @include body-font;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $primary;
+h3 {
     line-height: 1.2;
     margin-bottom: 1em;
     @include heading-font;
-}
-
-h1 {
-    @include font-size(60);
-}
-
-h2 {
-    @include font-size(45);
-}
-
-h3 {
     @include font-size(32);
 }
 
-h4 {
-    @include font-size(22);
-}
-
-h5 {
-    @include font-size(18);
-}
-
-h6 {
-    @include font-size(15);
-}
-
 p,
-li,
-a {
+a,
+button {
     line-height: 2;
-    color: $primary;
     margin-bottom: 1em;
     @include font-size(18);
-}
-
-a {
-    &:hover {
-        color: $primary;
-    }
-}
-
-/*========================================
-
-    Typography Helpers
-
-========================================*/
-
-.heading-font {
-    @include heading-font;
-}
-
-.body-font {
-    @include body-font;
 }

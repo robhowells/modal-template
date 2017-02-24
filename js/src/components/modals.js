@@ -4,50 +4,42 @@ var modals = (function ($) {
 
 	var modal = {
 		backdrop: '<div class="modal-backdrop"></div>',
-		self: '',
-		open: 'modal-open',
-		selector: '',
 		open: false,
 		pageMain: $('body'),
-		backdropSelector: '.modal-backdrop',
-		close: '.modal-close'
+		backdropSelector: '.modal-backdrop'
 	}
 
-	function hideModals() {
+	function showModal() {
+		modal.self.addClass('modal-open');
+		modal.self.append(modal.backdrop);
+		modal.self.find('.modal-backdrop').attr('data-modal-toggle', modal.selector);
+		modal.pageMain.addClass('modal-open');
+		modal.open = true;
+	}
+
+	function hideModal() {
 		$(modal.backdropSelector).remove();
 		modal.self.removeClass('modal-open');
 		modal.pageMain.removeClass('modal-open');
 		modal.open = false;
 	}
 
-	function showModal() {
-		modal.self.addClass('modal-open');
-		modal.self.append(modal.backdrop);
-		modal.pageMain.addClass('modal-open');
-		modal.open = true;
-	}
-
-	var init = function() {
-
-		$(document).on('click', modal.close, function(event) {
-			event.preventDefault();
-			hideModals();
-		});
-
-		$(document).on('click', modal.backdropSelector, function(event) {
-			event.preventDefault();
-			hideModals();
-		});
+	function init() {
 
 		$(document).on('click', '[data-modal-toggle]', function(event) {
-			if (modal.open) {
-				hideModals();
-			}
 			event.preventDefault();
-			modal.selector = $( this ).data( 'modal-toggle' );
-			modal.self = $( '.modal[data-modal="' + modal.selector + '"]' );
 
-			showModal();
+			// Get name of modal that needs to be opened / closed
+			modal.selector = $(this).data('modal-toggle');
+			modal.self = $('.modal[data-modal="' + modal.selector + '"]');
+
+			// Show / hide the modal
+			if(modal.open === false) {
+				showModal();
+			} else {
+				hideModal();
+			}
+
 		});
 	
 	};

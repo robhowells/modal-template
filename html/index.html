@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="http://**url**/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="http://**url**/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://**url**/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="http://**url**/manifest.json">
-    <link rel="mask-icon" href="http://**url**/safari-pinned-tab.svg">
-    <meta name="theme-color" content="#ffffff">
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
@@ -29,10 +23,12 @@
     
     <div class="modal" data-modal="modal-name">
         <div class="modal-inner">
-            <a href="#" class="modal-close"></a>
+            <a href="#" class="modal-close" data-modal-toggle="modal-name"></a>
             <div class="modal-content">
                 <h3>Modal voluptatem accusantium</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui <a href="#">officia deserunt</a> mollit anim id est laborum.</p>
+                <p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+                <button data-modal-toggle="modal-name">OK</button>
             </div>
         </div>
     </div>

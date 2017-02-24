@@ -14,278 +14,6 @@
 ========================================*/
 /*========================================
 
-	Grid Basic Setup
-
-========================================*/
-/*========================================
-
-	Container Setup
-
-========================================*/
-.container {
-  padding: 0 10px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: content-box;
-  max-width: 1320px; }
-  @media (max-width: 1024px) {
-    .container {
-      padding: 0 15px; } }
-
-/*========================================
-
-	Setup Column and Offset Column
-	Float and Margins
-
-========================================*/
-/*========================================
-
-	Clearfix and margin on Rows
-
-========================================*/
-.row::before, .row::after {
-  content: '';
-  display: table; }
-
-.row::after {
-  clear: both; }
-
-.negative-row {
-  position: relative;
-  margin-left: -1.32576%;
-  margin-right: -1.32576%; }
-
-/*========================================
-
-	Columns List
-
-========================================*/
-/*========================================
-
-	Create Each Grid Column Percentage
-
-========================================*/
-/*========================================
-
-	Standard Column Widths And Offsets
-
-========================================*/
-/*========================================
-
-	Tablet Columns
-
-========================================*/
-/*========================================
-
-	Phablet Columns
-
-========================================*/
-/*========================================
-
-	Mobile Columns
-
-========================================*/
-/*========================================
-
-	Set Up Grid
-
-========================================*/
-.columns {
-  float: none;
-  display: block;
-  margin: 0 1.25% 5%; }
-  .columns.first {
-    margin-left: 10px; }
-  .columns.last {
-    margin-right: 10px; }
-
-.one.columns {
-  width: auto; }
-
-.two.columns {
-  width: auto; }
-
-.three.columns {
-  width: auto; }
-
-.four.columns {
-  width: auto; }
-
-.five.columns {
-  width: auto; }
-
-.six.columns {
-  width: auto; }
-
-.seven.columns {
-  width: auto; }
-
-.eight.columns {
-  width: auto; }
-
-.nine.columns {
-  width: auto; }
-
-.ten.columns {
-  width: auto; }
-
-.eleven.columns {
-  width: auto; }
-
-.twelve.columns {
-  width: auto; }
-
-.one-phablet.columns {
-  width: 97.25%; }
-
-.two-phablet.columns {
-  width: 97.25%; }
-
-.three-phablet.columns {
-  width: 97.25%; }
-
-.one-mobile.columns {
-  float: left;
-  margin: 0 1.25% 2.5%;
-  width: 47.5%; }
-
-.two-mobile.columns {
-  float: left;
-  margin: 0 1.25% 2.5%;
-  width: 97.5%; }
-
-@media only screen and (min-width: 569px) {
-  .one-phablet.columns {
-    float: left;
-    margin: 0 1.25% 2.5%;
-    width: 22.5%; }
-  .two-phablet.columns {
-    float: left;
-    margin: 0 1.25% 2.5%;
-    width: 47.5%; }
-  .three-phablet.columns {
-    float: left;
-    margin: 0 1.25% 2.5%;
-    width: 72.5%; } }
-
-@media only screen and (min-width: 760px) {
-  .one-tablet.columns {
-    width: 5.68182%; }
-  .two-tablet.columns {
-    width: 14.01515%; }
-  .three-tablet.columns {
-    width: 22.34848%; }
-  .four-tablet.columns {
-    width: 30.68182%; }
-  .five-tablet.columns {
-    width: 39.01515%; }
-  .six-tablet.columns {
-    width: 47.34848%; }
-  .seven-tablet.columns {
-    width: 55.68182%; }
-  .eight-tablet.columns {
-    width: 64.01515%; }
-  .nine-tablet.columns {
-    width: 72.34848%; }
-  .ten-tablet.columns {
-    width: 80.68182%; }
-  .eleven-tablet.columns {
-    width: 89.01515%; }
-  .twelve-tablet.columns {
-    width: 97.34848%; }
-  .offset-by-none-tablet {
-    margin-left: 1.32576%;
-    margin-right: 1.32576%; } }
-
-@media only screen and (min-width: 768px) {
-  .column,
-  .columns {
-    float: left;
-    margin: 0 1.32576%; }
-    .column.first,
-    .columns.first {
-      margin-left: 0; }
-    .column.last,
-    .columns.last {
-      margin-right: 0; }
-  .one.columns {
-    width: 5.68182%; }
-  .two.columns {
-    width: 14.01515%; }
-  .three.columns {
-    width: 22.34848%; }
-  .four.columns {
-    width: 30.68182%; }
-  .five.columns {
-    width: 39.01515%; }
-  .six.columns {
-    width: 47.34848%; }
-  .seven.columns {
-    width: 55.68182%; }
-  .eight.columns {
-    width: 64.01515%; }
-  .nine.columns {
-    width: 72.34848%; }
-  .ten.columns {
-    width: 80.68182%; }
-  .eleven.columns {
-    width: 89.01515%; }
-  .twelve.columns {
-    width: 97.34848%; }
-  .offset-by-half {
-    margin-left: 5.49242%; }
-  .offset-by-one {
-    margin-left: 9.65909%; }
-  .offset-by-one-half {
-    margin-left: 13.82576%; }
-  .offset-by-two {
-    margin-left: 17.99242%; }
-  .offset-by-two-half {
-    margin-left: 22.15909%; }
-  .offset-by-three {
-    margin-left: 26.32576%; }
-  .offset-by-three-half {
-    margin-left: 30.49242%; }
-  .offset-by-four {
-    margin-left: 34.65909%; }
-  .offset-by-four-half {
-    margin-left: 38.82576%; }
-  .offset-by-five {
-    margin-left: 42.99242%; }
-  .offset-by-five-half {
-    margin-left: 47.15909%; }
-  .offset-by-six {
-    margin-left: 51.32576%; }
-  .offset-by-six-half {
-    margin-left: 55.49242%; }
-  .offset-by-seven {
-    margin-left: 59.65909%; }
-  .offset-by-seven-half {
-    margin-left: 63.82576%; }
-  .offset-by-eight {
-    margin-left: 67.99242%; }
-  .offset-by-eight-half {
-    margin-left: 72.15909%; }
-  .offset-by-nine {
-    margin-left: 76.32576%; }
-  .offset-by-nine-half {
-    margin-left: 80.49242%; }
-  .offset-by-ten {
-    margin-left: 84.65909%; }
-  .offset-by-ten-half {
-    margin-left: 88.82576%; }
-  .offset-by-eleven {
-    margin-left: 92.99242%; }
-  .offset-by-eleven-half {
-    margin-left: 97.15909%; } }
-
-/*========================================
-
-	Fixed Width / Not Responsive
-
-========================================*/
-/*========================================
-
 	Resonsive Mixin For Responsive 
 	Styles Within The Normal Classes.
 
@@ -759,75 +487,6 @@ html, body {
 ========================================*/
 /*========================================
 
-	Main Colours 
-
-========================================*/
-/*========================================
-
-	Colour Variations
-
-========================================*/
-/*========================================
-	 
-	Colour Classes
-
-========================================*/
-.bg-primary {
-  background: #2a2b2f; }
-
-.color-primary {
-  color: #2a2b2f; }
-
-.bg-secondary {
-  background: #efefef; }
-
-.color-secondary {
-  color: #efefef; }
-
-.bg-accent {
-  background: #34dddd; }
-
-.color-accent {
-  color: #34dddd; }
-
-.bg-primary-variation-1 {
-  background: #646466; }
-
-.color-primary-variation-1 {
-  color: #646466; }
-
-.bg-secondary-variation-1 {
-  background: #f9f9f9; }
-
-.color-secondary-variation-1 {
-  color: #f9f9f9; }
-
-.bg-white-default {
-  background: #fff; }
-
-.color-white-default {
-  color: #fff; }
-
-.bg-black-default {
-  background: #000; }
-
-.color-black-default {
-  color: #000; }
-
-.bg-error {
-  background: #ffbaba; }
-
-.color-error {
-  color: #ffbaba; }
-
-.bg-success {
-  background: #dff2bf; }
-
-.color-success {
-  color: #dff2bf; }
-
-/*========================================
-
 	Mixins
 	Credit: Sonny Prince - joint developer of mixins.scss
 	https://github.com/sonnyprince
@@ -847,161 +506,9 @@ html, body {
 ========================================*/
 /*========================================
 
-	Cross Browser Diagonal Gradient
-
-========================================*/
-/*========================================
-
-	Cross Browser Horizontal Gradient
-
-========================================*/
-/*========================================
-
-	Cross Browser Vertical Gradient
-
-========================================*/
-/*========================================
-
-	List styles
-
-========================================*/
-/*========================================
-
-	Clearfix
-
-========================================*/
-/*========================================
-
-	Placeholder
-
-========================================*/
-/*========================================
-
-   Background Images
-
-========================================*/
-/*========================================
-
    Positioning
 
 ========================================*/
-/*========================================
-
-	Keyframe animation
-
-========================================*/
-/*========================================
-
-	Text Ellipsis
-
-========================================*/
-/*========================================
-
-   Horizonal Scrolling
-
-========================================*/
-/*========================================
-
-	Aspect Ratio
-
-========================================*/
-/*========================================
-
-	Responsive Fonts
-
-========================================*/
-/*========================================
-
-    Typography Styles
-    _____________
-
-========================================*/
-body {
-  font-family: 'Open Sans', sans-serif; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #2a2b2f;
-  line-height: 1.2;
-  margin-bottom: 1em;
-  font-family: 'Open Sans', sans-serif; }
-
-h1 {
-  font-size: 60px;
-  font-size: 6rem; }
-
-h2 {
-  font-size: 45px;
-  font-size: 4.5rem; }
-
-h3 {
-  font-size: 32px;
-  font-size: 3.2rem; }
-
-h4 {
-  font-size: 22px;
-  font-size: 2.2rem; }
-
-h5 {
-  font-size: 18px;
-  font-size: 1.8rem; }
-
-h6 {
-  font-size: 15px;
-  font-size: 1.5rem; }
-
-p,
-li,
-a {
-  line-height: 2;
-  color: #2a2b2f;
-  margin-bottom: 1em;
-  font-size: 18px;
-  font-size: 1.8rem; }
-
-a:hover {
-  color: #2a2b2f; }
-
-/*========================================
-
-    Typography Helpers
-
-========================================*/
-.heading-font {
-  font-family: 'Open Sans', sans-serif; }
-
-.body-font {
-  font-family: 'Open Sans', sans-serif; }
-
-/*========================================
-
-	Icon Styles
-	_____________
-
-========================================*/
-@font-face {
-  font-family: 'icons';
-  src: url("../fonts/icons.eot");
-  src: url("../fonts/icons.eot#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 /*========================================
 
 	Z-Index Styles
@@ -1033,115 +540,34 @@ a:hover {
 ========================================*/
 /*========================================
 
+    Typography Styles
+    _____________
+
+========================================*/
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h3 {
+  line-height: 1.2;
+  margin-bottom: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+p,
+a,
+button {
+  line-height: 2;
+  margin-bottom: 1em;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+/*========================================
+
 	Helper Styles
 	_____________
 
 ========================================*/
-/*========================================
-
-	Margin Helpers
-
-========================================*/
-.mbn {
-  margin-bottom: 0; }
-
-.mb {
-  margin-bottom: 1.76768%; }
-
-.mb25 {
-  margin-bottom: 25px; }
-
-/*========================================
-
-	Animation Helpers
-
-========================================*/
-/*========================================
-
-	Example Usage
-	--------------------------------------
-
-	.shake {
-	    @include animation('shake 0.5s');
-	}
-
-========================================*/
-/*========================================
-
-	List Helpers
-
-========================================*/
-.block-list {
-  margin-left: 0;
-  list-style: none; }
-  .block-list > li {
-    float: none;
-    display: block; }
-
-.inline-list {
-  margin-left: 0;
-  list-style: none; }
-  .inline-list > li {
-    float: left;
-    margin-bottom: 0; }
-
-.styled-list {
-  margin-left: 20px;
-  margin-bottom: 1.5em; }
-  .styled-list li {
-    margin-bottom: .5em; }
-    .styled-list li:last-child {
-      margin-bottom: 0; }
-
-@media (min-width: 760px) {
-  .scrollable-on-phablet {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch; }
-    .scrollable-on-phablet > li {
-      float: none;
-      white-space: normal;
-      display: inline-block; } }
-
-.overflow-scroll {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch; }
-  .overflow-scroll > li {
-    float: none;
-    white-space: normal;
-    display: inline-block; }
-
-/*========================================
-
-	Container Helpers
-
-========================================*/
-.same-height-children {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
-  @media (min-width: 760px) {
-    .same-height-children {
-      display: block; } }
-
-/*========================================
-
-	Position helpers
-
-========================================*/
-.hidden {
-  display: none; }
-
-@media (min-width: 760px) {
-  .hidden-on-phablet {
-    display: none; } }
-
 .display-block {
   display: block; }
 
@@ -1152,12 +578,6 @@ a:hover {
 ========================================*/
 .text-center {
   text-align: center; }
-
-.text-hidden {
-  font-size: 0;
-  position: absolute;
-  color: transparent;
-  text-indent: -99999px; }
 
 /*========================================
 
@@ -1184,28 +604,12 @@ a:hover {
 
 /*========================================
 
-	Header Section Styles
-
-========================================*/
-/*========================================
-
 	Main Section Styles
 
 ========================================*/
-.section-padded-xs {
-  padding: 25px 0; }
-
-.section-padded-sm {
-  padding: 40px 0; }
-
 .section-padded {
   padding: 50px 0; }
 
-/*========================================
-
-	Footer Section Styles
-
-========================================*/
 /*========================================
 		Component Styles
 	========================================*/
